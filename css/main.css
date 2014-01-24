@@ -4,8 +4,113 @@
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   Body styles
+   ========================================================================== */
+body{
+	background: #5F021F;
+	color: #FFC652;
+}
+
+.nice {
+	font-family: 'Parisienne', cursive;
+}
 
 
+
+/* ==========================================================================
+   Button styles
+   ========================================================================== */
+.btn {
+  display: block;
+  padding: 20px 0;
+  margin: auto;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-oldstyle {
+  background-color: #83AE84;
+  border-color: #83AE84;
+  color: #5F021F;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+  background-color: #77a678;
+  background-image: -moz-linear-gradient(top,#83AE84,#649a66);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#83AE84),to(#649a66));
+  background-image: -webkit-linear-gradient(top,#83AE84,#649a66);
+  background-image: -o-linear-gradient(top,#83AE84,#649a66);
+  background-image: linear-gradient(to bottom,#83AE84,#649a66);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff83ae84', endColorstr='#ff649965', GradientType=0);
+  border-color: #649a66 #649a66 #466b47;
+  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+}
+.btn-oldstyle:hover,
+.btn-oldstyle:focus {
+  text-decoration: none;
+  background-position: 0 -15px;
+  -webkit-transition: background-position .1s linear;
+  -moz-transition: background-position .1s linear;
+  -o-transition: background-position .1s linear;
+  transition: background-position .1s linear;
+}
+.btn-oldstyle:hover,
+.btn-oldstyle:focus {
+  background-color: #649a66;
+}
+.btn-oldstyle:active,
+.btn-oldstyle.active,
+.btn-oldstyle.active:hover {
+  background-color: #74a475;
+  border-color: #649a66;
+}
+.btn-oldstyle.disabled:hover,
+.btn-oldstyle.disabled:focus,
+.btn-oldstyle.disabled:active,
+.btn-oldstyle.disabled.active,
+.btn-oldstyle[disabled] .btn-oldstyle:hover,
+.btn-oldstyle[disabled] .btn-oldstyle:focus,
+.btn-oldstyle[disabled] .btn-oldstyle:active,
+.btn-oldstyle[disabled] .btn-oldstyle.active {
+  background-color: #83AE84;
+  border-color: #83AE84;
+}
+
+/* ==========================================================================
+   Video styles
+   ========================================================================== */
 
 
 
