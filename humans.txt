@@ -3,11 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Jeffrey Slort -- Developer -- @vandms
+    Michael van Dijk -- Developer -- @vandms
 
 # THANKS
 
-    <name>
+    Carrot - Share-button - http://carrot.github.io/share-button/
 
 # TECHNOLOGY COLOPHON
 

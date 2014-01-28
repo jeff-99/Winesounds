@@ -6,7 +6,9 @@ define('USER', 'm1_fcb1927d');
 define('PASS', 'JnR8YbZdcr');
 define('DB', 'm1_fcb1927d');
 
-$parent_id = $_GET['parent_id'];
+$parent_id_get = $_GET['parent_id'];
+$parent_id = preg_replace("/\D/", "", $parent_id_get);
+
 /* MySQL connect */ 
 $con = new mysqli(HOST, USER, PASS, DB);
 

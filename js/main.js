@@ -1,11 +1,10 @@
 function get_children(parent_id){
-	alert(parent_id);
    	$.getJSON('http://www.winesounds.nl/includes/get_children.php?parent_id='+parent_id , create_div);
 };
 
 function create_div(children_list){
 	var children = children_list;
-	var div = '<div id="bla" class="col-md-12 buttonlist" data-id="'+children[0]['parent_id']+'">';
+	var div = '<div class="col-md-12 buttonlist" data-id="'+children[0]['parent_id']+'">';
 	$('.applicatie').append(div);
 	children.forEach(function(child){
 		/* if is laatste ?? */ 
@@ -16,50 +15,51 @@ function create_div(children_list){
 		}
 		else{
 			/* create youtube embed */
-			var embedtest = '<iframe width="640" height="360" src="//www.youtube.com/embed/U1Uq1hQZOWE?list=PLC49FC96BD896501A" frameborder="0" allowfullscreen></iframe>';
-			/*var embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'+child['youtube_url']+'" frameborder="0" allowfullscreen></iframe>';*/
-			$('div[data-id="'+ child['parent_id']+'"]').append(embedtest);
+			var embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'+child['youtube_url']+'" frameborder="0" allowfullscreen></iframe>';
+			$('#video').append(embed);
 		}
 		
+	});	
+};
+
+function initialize(){
+	$('.applicatie').append(function(){
+		$.getJSON('http://www.winesounds.nl/includes/get_children.php?parent_id=1', create_div);
 	});
-		
-	
 };
 
 
 
+
 $(document).ready(function () {
+    initialize();
     $('.applicatie').delegate('.btn','click',function(){
         $(this).addClass('active');
         $(this).removeClass('btn');
         var parent_id = $(this).data('id');
-        alert(parent_id);
         $(this).siblings().hide('slow');
         
-        get_children(parent_id); /* moet nog gemaakt worden */  
-
-
-  
-        
+        get_children(parent_id); /* moet nog gemaakt worden */       
         
     });
     $('#reset').click(function(){
         location.reload();
     });
-});
-
-/* voorbeeld */
-/*
-$.ajax({
-    	url: "includes/get_children.php",
-    	type: "GET",
-    	data: "id="+parent_id,
-    	statusCode: {
-    		200: function() {
-      			alert( "page found" );
-    			}
-  			},
-  	  	success: function(data){
+    
+    $('#back').click(function(){
+    	if($('.applicatie').children().length > 1 ){ 
+    		$('.applicatie div:last-child').remove();
+	    	$('.applicatie div:last-child button').addClass('btn');
+	    	$('.applicatie div:last-child button').removeClass('active');
+	    	$('.applicatie div:last-child button').siblings().show('slow');
+	    	$('#video').empty();
     	}
+    	
     });
-*/
+    
+    $('#share').share({
+    	button_text: 'Delen'
+    	/* http://carrot.github.io/share-button/ */
+    });
+    $.backstretch('/img/red-charry-wine-HD-wallpaper.jpg');
+});

@@ -6,10 +6,10 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>The Sound of Wines</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
+		
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -20,8 +20,6 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
-
-        <!--<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>-->
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -59,36 +57,43 @@
       </div>
     </div>
 
-    <div class="container">
+    <!--<div class="container"> -->
       <!-- Example row of columns -->
       <div class="row">
       	<div class="col-md-12 page-header">
 		  <h1 class="nice">The Sound of Wines<small>enjoying even more!</small></h1>
 		</div>
-	      <div class="col-md-12 applicatie">
-	      	<div class="col-md-12 buttonlist" data-id="0">
-	      		<button type="button" class="col-xs-12 col-md-12 btn btn-oldstyle" data-id="1">Default</button>
-	      		<button type="button" class="col-xs-12 col-md-12 btn btn-oldstyle" data-id="2">Default</button>
-	      		<button type="button" class="col-xs-12 col-md-12 btn btn-oldstyle" data-id="3">Default</button>
-	      	</div>
+	      <div class="col-md-8 col-sm-12 col-xs-12 applicatie">
+	      </div>
+	      <div class="col-md-12" id="video">
+	      	
 	      </div>
 	   </div>
-	   <button id="reset"> RESET </button>
+	   <div class="row">
+		   <div class="col-md-12">
+			   <button id="reset"> <span class="glyphicon glyphicon-repeat"></span>RESET </button>
+			   <button id="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
+			   <div id="share"></div>
+		   </div>
+	   </div>
+	   <!-- <div id="bg"><img src="img/red-charry-wine-HD-wallpaper.jpg" style="cursor: pointer; width: 1920px; height: 1200px; display: inline; left: 0px;"></div> -->
       
 
       <hr>
 
       <footer>
-        <p>&copy; Wijnblad 2013, created by : <a href="http://vandms.nl">van dms</a></p>
+        <p>&copy; 't Wijnblad 2013, created by : <a href="http://vandms.nl">van dms</a></p>
       </footer>
-    </div> <!-- /container -->        
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- </div> --> <!-- /container -->        
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> 
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/share.min.js"></script>
+        <script src="js/jquery.backstretch.js"></script>
 <!--
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
