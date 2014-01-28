@@ -7,28 +7,29 @@
    ========================================================================== */
 body{
 	background-color:#000000;
-	color: #FFC652;
+	/*color: #FFC652;*/
 }
 
 .nice {
 	font-family: 'Parisienne', cursive;
 }
 
-/*#bg {
-z-index: -3;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+.knoppen{
+	margin-top: 30px;
+	margin-right: 15px;
+	float: right;
 }
-*/
 
+#share {
+	margin-top: 35px;
+	margin-left: 15px;
+}
 /* ==========================================================================
    Button styles
    ========================================================================== */
 .active {
-	font-size: 24px;
+  margin-bottom: 0;
+  font-size: 24px;
   font-weight: normal;
   line-height: 32px;
   text-align: center;
@@ -48,7 +49,7 @@ height: 100%;
 .btn {
   display: block;
   padding: 20px 0;
-  margin: auto;
+  margin-bottom: 5px;
   font-size: 24px;
   font-weight: normal;
   line-height: 32px;
@@ -67,8 +68,8 @@ height: 100%;
 
 .btn:focus {
   outline: thin dotted #333;
-  outline: 0px 0px -webkit-focus-ring-color;
-  outline-offset: 0px;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
 }
 
 .btn:hover,
@@ -183,10 +184,13 @@ height: 100%;
   border-color: #5F021F;
 }
 
+
 /* ==========================================================================
    Video styles
    ========================================================================== */
 
+.video  { position: relative; padding-top: 30px; height: 0; overflow: hidden; }
+.video  iframe, .video  object, .video  embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 
 

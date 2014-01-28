@@ -61,5 +61,5 @@ $(document).ready(function () {
     	button_text: 'Delen'
     	/* http://carrot.github.io/share-button/ */
     });
-    $.backstretch('/img/red-charry-wine-HD-wallpaper.jpg');
+    $.backstretch('/img/background2.jpg');
 });

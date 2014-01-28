@@ -20,6 +20,8 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+        
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -52,6 +54,7 @@
                 <li><a href="#">One more separated link</a></li>
               </ul>
             </li>
+            <p class="navbar-text navbar-right">&copy; 't Wijnblad 2013, created by : <a href="http://vandms.nl">van dms</a></p>
           </ul>
         </div><!--/.navbar-collapse -->
       </div>
@@ -60,25 +63,69 @@
     <!--<div class="container"> -->
       <!-- Example row of columns -->
       <div class="row">
-      	<div class="col-md-offset-1 col-md-6 col-sm-12 col-xs-12 page-header">
-		  <h1 class="nice">The Sound of Wines<small>enjoying even more!</small></h1>
+      	<div class="col-md-offset-4 col-md-4 col-sm-12 col-xs-12 page-header">
+		  <!--<h1 class="nice">The Sound of Wines<small>enjoying even more!</small></h1> -->
+		  <img class="img-responsive" src="img/Logo the Sound of Wines goud.png">
 		</div>
-	      <div class="col-md-offset-1 col-md-6 col-sm-12 col-xs-12 applicatie">
+      </div>
+      <div class="row">
+	      <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12 applicatie">
 	      </div>
-	      <div class="col-md-offset-1 col-md-6 col-sm-12 col-xs-12" id="video">
+	      <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12 video" id="video">
 	      	
 	      </div>
 	   </div>
 	   <div class="row">
-		   <div class="col-md-offset-1 col-md-6 col-sm-12 col-xs-12">
-			   <button id="reset"> <span class="glyphicon glyphicon-repeat"></span>RESET </button>
-			   <button id="back"><span class="glyphicon glyphicon-arrow-left"></span> back</button>
-			   <div id="share"></div>
+		   <div class="col-md-offset-1 col-md-1 "><div id="share"></div></div>
+		   <div class="col-md-3 col-sm-12 col-xs-12">
+				   <div class="btn-group btn-group-lg knoppen">
+					   <button id="reset" type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat"></span>Reset </button>
+						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#help">Help</button>
+					   <button id="back" type="button"  class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Terug</button>
+				   </div> 
 		   </div>
 	   </div>
-	   <!-- <div id="bg"><img src="img/red-charry-wine-HD-wallpaper.jpg" style="cursor: pointer; width: 1920px; height: 1200px; display: inline; left: 0px;"></div> -->
       
-
+      
+		<!-- Modal -->
+			<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h2 class="modal-title" id="ModalLabel">Hoe gebruik ik deze website ?</h2>
+			      </div>
+			      <div class="modal-body">
+			        <p>In het strartscherm wordt u gevraagd aan te geven om welke kleur wijn het gaat, in de tweede stap zal u worden gevraagd naar de druivensoort die is gebruikt in de wijn. In onderstaande tabel kunt u kijken welke soort druif het meest wordt gebruikt in een bepaalde regio</p>
+			        <table class="table table-striped">
+					  <th>Land</th>
+					  <th>Streek</th>
+					  <th>Druif</th>
+					  
+					  <tr>
+					  	<td>1</td>
+					  	<td>2</td>
+					  	<td>2</td>
+					  </tr>
+					  <tr>
+					  	<td>1</td>
+					  	<td>2</td>
+					  	<td>2</td>
+					  </tr>
+					  <tr>
+					  	<td>1</td>
+					  	<td>2</td>
+					  	<td>2</td>
+					  </tr>
+					</table>
+			      </div>
+			      <div class="modal-footer">
+			        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true"><h2>Sluiten</h2></button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->
+<!--
       <hr>
 
       <footer class="pull-right">
@@ -92,7 +139,7 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/share.min.js"></script>
+        <script src="js/share.js"></script>
         <script src="js/jquery.backstretch.js"></script>
 <!--
         <script>
