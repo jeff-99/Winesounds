@@ -13,80 +13,63 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
-                padding-top: 50px;
+                padding-top: 20px;
                 padding-bottom: 20px;
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Arizonia' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
         
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-            <p class="navbar-text navbar-right">&copy; 't Wijnblad 2013, created by : <a href="http://vandms.nl">van dms</a></p>
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </div>
 
     <!--<div class="container"> -->
       <!-- Example row of columns -->
       <div class="row">
-      	<div class="col-md-offset-4 col-md-4 col-sm-12 col-xs-12 page-header">
-		  <!--<h1 class="nice">The Sound of Wines<small>enjoying even more!</small></h1> -->
+      	
+      	<div class="col-md-offset-2 col-md-4 col-sm-12 col-xs-12">
 		  <img class="img-responsive" src="img/Logo the Sound of Wines goud.png">
 		</div>
+		
       </div>
       <div class="row">
+      	<div class="col-md-offset-4 col-md-4 col-sm-12 col-xs-12">
+      		<img class="img-responsive" src="img/Drink with a big smile silver.png">
+      	</div>
+      </div>
+      <div class="row">
+      	<div class="visible-xs col-xs-12">
+				   <div class="btn-group btn-group-lg knoppen">
+					   <button id="reset1" type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat"></span>Reset </button>
+						<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#help"><span class="glyphicon glyphicon-question-sign">Help</button>
+					   <button id="back1" type="button"  class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Terug</button>
+				   </div> 
+		   </div>
+	  </div>
+      <div class="row">
+      	
 	      <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12 applicatie">
 	      </div>
-	      <div class="col-md-offset-1 col-md-4 col-sm-12 col-xs-12 video" id="video">
-	      	
+	      <div class="col-md-offset-1 col-md-5 col-sm-12 col-xs-12">
+	      	<div class="video" id="video"></div>
 	      </div>
 	   </div>
 	   <div class="row">
-		   <div class="col-md-offset-1 col-md-1 "><div id="share"></div></div>
-		   <div class="col-md-3 col-sm-12 col-xs-12">
+		   <div class="col-md-offset-1 col-md-1 hidden-xs"><div id="share"></div></div>
+		   <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
 				   <div class="btn-group btn-group-lg knoppen">
 					   <button id="reset" type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat"></span>Reset </button>
-						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#help">Help</button>
+						<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#help"><span class="glyphicon glyphicon-question-sign">Help</button>
 					   <button id="back" type="button"  class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Terug</button>
 				   </div> 
 		   </div>
 	   </div>
       
-      
+      <div class="hidden-xs" id="copyright">&copy; 't Wijnblad 2013, created by : <a href="http://vandms.nl">van dms</a></div>
 		<!-- Modal -->
 			<div class="modal fade" id="help" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">

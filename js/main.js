@@ -10,12 +10,12 @@ function create_div(children_list){
 		/* if is laatste ?? */ 
 		if (!child['youtube_url']){
 			/* create div */
-			var button = '<button type="button" class="col-xs-12 col-md-12 btn btn-oldstyle" data-id="'+child['id']+'">'+child['naam']+'</button>';
+			var button = '<button type="button" class="col-xs-12 col-md-12 btn btn-oldstyle nice" data-id="'+child['id']+'">'+child['naam']+'</button>';
 			$('div[data-id="'+ child['parent_id']+'"]').append(button);
 		}
 		else{
 			/* create youtube embed */
-			var embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'+child['youtube_url']+'" frameborder="0" allowfullscreen></iframe>';
+			var embed = '<iframe width="853" height="480" src="//www.youtube.com/embed/'+child['youtube_url']+'" frameborder="0" loop="1" allowfullscreen></iframe>';
 			$('#video').append(embed);
 		}
 		
@@ -42,6 +42,8 @@ $(document).ready(function () {
         get_children(parent_id); /* moet nog gemaakt worden */       
         
     });
+    
+    /* app menu options */
     $('#reset').click(function(){
         location.reload();
     });
@@ -57,8 +59,26 @@ $(document).ready(function () {
     	
     });
     
+    /* mobile app options */
+   $('#reset1').click(function(){
+        location.reload();
+    });
+    
+    $('#back1').click(function(){
+    	if($('.applicatie').children().length > 1 ){ 
+    		$('.applicatie div:last-child').remove();
+	    	$('.applicatie div:last-child button').addClass('btn');
+	    	$('.applicatie div:last-child button').removeClass('active');
+	    	$('.applicatie div:last-child button').siblings().show('slow');
+	    	$('#video').empty();
+    	}
+    	
+    });
+    
+    
     $('#share').share({
-    	button_text: 'Delen'
+    	button_text: 'Delen',
+    	icon: ""
     	/* http://carrot.github.io/share-button/ */
     });
     $.backstretch('/img/background2.jpg');

@@ -11,7 +11,7 @@ body{
 }
 
 .nice {
-	font-family: 'Parisienne', cursive;
+	font-family: 'Courgette', cursive;
 }
 
 .knoppen{
@@ -23,6 +23,17 @@ body{
 #share {
 	margin-top: 35px;
 	margin-left: 15px;
+}
+
+#copyright{
+	position: fixed;
+	bottom: 5px;
+	right: 5px;
+	color: #fff;
+}
+
+.applicatie{
+	margin-top: 75px;
 }
 /* ==========================================================================
    Button styles
@@ -45,6 +56,18 @@ body{
           user-select: none;
 }
 
+.btn-group > .btn {
+	opacity:0.5;
+}
+
+.btn-group > .btn:hover {    
+	opacity: 1;
+	-webkit-transition: opacity 500ms ease;
+	-moz-transition: opacity 500ms ease;
+	-ms-transition: opacity 500ms ease;
+	-o-transition: opacity 500ms ease;
+	transition: opacity 500ms ease;
+}
 
 .btn {
   display: block;
@@ -86,56 +109,6 @@ body{
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
           box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-
-/*
-.btn-oldstyle {
-  background-color: #5F021F;
-  border-color: #5F021F;
-  color: #fff;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
-  background-color: #77a678;
-  background-image: -moz-linear-gradient(top,#83AE84,#649a66);
-  background-image: -webkit-gradient(linear,0 0,0 100%,from(#83AE84),to(#649a66));
-  background-image: -webkit-linear-gradient(top,#83AE84,#649a66);
-  background-image: -o-linear-gradient(top,#83AE84,#649a66);
-  background-image: linear-gradient(to bottom,#83AE84,#649a66);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff83ae84', endColorstr='#ff649965', GradientType=0);
-  border-color: #649a66 #649a66 #466b47;
-  border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
-}
-.btn-oldstyle:hover,
-.btn-oldstyle:focus {
-  text-decoration: none;
-  background-position: 0 -15px;
-  -webkit-transition: background-position .1s linear;
-  -moz-transition: background-position .1s linear;
-  -o-transition: background-position .1s linear;
-  transition: background-position .1s linear;
-}
-.btn-oldstyle:hover,
-.btn-oldstyle:focus {
-  background-color: #5F021F;
-}
-.btn-oldstyle:active,
-.btn-oldstyle.active,
-.btn-oldstyle.active:hover {
-  background-color: #74a475;
-  border-color: #649a66;
-}
-.btn-oldstyle.disabled:hover,
-.btn-oldstyle.disabled:focus,
-.btn-oldstyle.disabled:active,
-.btn-oldstyle.disabled.active,
-.btn-oldstyle[disabled] .btn-oldstyle:hover,
-.btn-oldstyle[disabled] .btn-oldstyle:focus,
-.btn-oldstyle[disabled] .btn-oldstyle:active,
-.btn-oldstyle[disabled] .btn-oldstyle.active {
-  background-color: #83AE84;
-  border-color: #83AE84;
-}
-
-*/
 
 .btn-oldstyle {
   background-color: #5F021F;
@@ -189,7 +162,7 @@ body{
    Video styles
    ========================================================================== */
 
-.video  { position: relative; padding-top: 30px; height: 0; overflow: hidden; }
+.video  { position: relative;padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
 .video  iframe, .video  object, .video  embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
 
