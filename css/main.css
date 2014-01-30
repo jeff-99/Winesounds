@@ -20,11 +20,6 @@ body{
 	float: right;
 }
 
-#share {
-	margin-top: 35px;
-	margin-left: 15px;
-}
-
 #copyright{
 	position: fixed;
 	bottom: 5px;
@@ -34,6 +29,20 @@ body{
 
 .applicatie{
 	margin-top: 75px;
+}
+
+.at4-share-btn{
+	opacity: 0.5;
+}
+
+.at4-share-btn:hover{
+	opacity: 1;
+	-webkit-transition: opacity 500ms ease;
+	-moz-transition: opacity 500ms ease;
+	-ms-transition: opacity 500ms ease;
+	-o-transition: opacity 500ms ease;
+	transition: opacity 500ms ease;
+}
 }
 /* ==========================================================================
    Button styles

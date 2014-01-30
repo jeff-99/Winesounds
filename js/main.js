@@ -75,11 +75,20 @@ $(document).ready(function () {
     	
     });
     
-    
+    /*
     $('#share').share({
     	button_text: 'Delen',
     	icon: ""
-    	/* http://carrot.github.io/share-button/ */
+    	http://carrot.github.io/share-button/ 
     });
+    */
+   
     $.backstretch('/img/background2.jpg');
+    addthis.layers({
+			    'theme' : 'dark',
+			    'share' : {
+			      'position' : 'right',
+			      'numPreferredServices' : 5
+			    }   
+			  });
 });

@@ -10,6 +10,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 		
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+		
+		<!-- facebook metadata -->
+		<meta property="og:image" content="http://www.winesounds.nl/img/logo.jpg">
+		<meta property="og:title" content="Wine Sounds - Drink your wine with a Big smile">
+		<meta property="og:description" content="Kent u het gevoel? zit u net een heerlijke wijn te drinken, 
+		romantiek ten top en wat mist u, Ja, een 'nice melody',
+		  een 'lekkere tune' welke is afgestemd op uw wijn.
+		  Bijvoorbeeld een lichte sound bij uw Chardonnay en stoere, ruige sound bij uw Shiraz. 
+		  'Wine Sounds' helpt u van dit probleem af,  
+		  bij elke wijn de juiste muziek met passie bij elkaar gezocht door 't Wijnblad">
+		<!-- facebook metadata end-->
+		
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <style>
             body {
@@ -18,7 +39,7 @@
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/main.min.css">
         <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
         
     </head>
@@ -26,9 +47,6 @@
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-
-    <!--<div class="container"> -->
-      <!-- Example row of columns -->
       <div class="row">
       	
       	<div class="col-md-offset-2 col-md-4 col-sm-12 col-xs-12">
@@ -44,9 +62,10 @@
       <div class="row">
       	<div class="visible-xs col-xs-12">
 				   <div class="btn-group btn-group-lg knoppen">
-					   <button id="reset1" type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat"></span>Reset </button>
-						<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#help"><span class="glyphicon glyphicon-question-sign">Help</button>
-					   <button id="back1" type="button"  class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Terug</button>
+					   <button id="reset1" type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat"></span> </button>
+					   <button class="btn btn-default" type="button" data-toggle="modal" data-target="#info"><span class="glyphicon glyphicon-info-sign"></span></button>
+					<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#help"><span class="glyphicon glyphicon-question-sign"></button>
+					   <button id="back1" type="button"  class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> </button>
 				   </div> 
 		   </div>
 	  </div>
@@ -59,11 +78,14 @@
 	      </div>
 	   </div>
 	   <div class="row">
-		   <div class="col-md-offset-1 col-md-1 hidden-xs"><div id="share"></div></div>
+		   <div class="col-md-offset-1 col-md-1 hidden-xs">
+		   	<div class="btn-group btn-group-lg knoppen"><button class="btn btn-default" type="button" data-toggle="modal" data-target="#info"><span class="glyphicon glyphicon-info-sign"></span>&nbsp;Info</button></div>
+
+		   	</div>
 		   <div class="col-md-3 col-sm-12 col-xs-12 hidden-xs">
 				   <div class="btn-group btn-group-lg knoppen">
 					   <button id="reset" type="button" class="btn btn-danger"> <span class="glyphicon glyphicon-repeat"></span>Reset </button>
-						<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#help"><span class="glyphicon glyphicon-question-sign">Help</button>
+						<button class="btn btn-primary" type="button" data-toggle="modal" data-target="#help"><span class="glyphicon glyphicon-question-sign"></span>&nbsp;Help</button>	
 					   <button id="back" type="button"  class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span> Terug</button>
 				   </div> 
 		   </div>
@@ -80,25 +102,59 @@
 			      </div>
 			      <div class="modal-body">
 			        <p>In het strartscherm wordt u gevraagd aan te geven om welke kleur wijn het gaat, in de tweede stap zal u worden gevraagd naar de druivensoort die is gebruikt in de wijn. In onderstaande tabel kunt u kijken welke soort druif het meest wordt gebruikt in een bepaalde regio</p>
+			        <h2>Rood</h2>
 			        <table class="table table-striped">
-					  <th>Land</th>
 					  <th>Streek</th>
 					  <th>Druif</th>
 					  
 					  <tr>
-					  	<td>1</td>
-					  	<td>2</td>
-					  	<td>2</td>
+					  	<td>Boreaux</td>
+					  	<td>Cabernet Sauvignon, Merlot</td>
 					  </tr>
 					  <tr>
-					  	<td>1</td>
-					  	<td>2</td>
-					  	<td>2</td>
+					  	<td>Bourgogne</td>
+					  	<td>Pinot Noir</td>
 					  </tr>
 					  <tr>
-					  	<td>1</td>
-					  	<td>2</td>
-					  	<td>2</td>
+					  	<td>Rhone</td>
+					  	<td>Syrah</td>
+					  </tr>
+					  <tr>
+					  	<td>Chianti</td>
+					  	<td>Sangiovese</td>
+					  </tr>
+					  <tr>
+					  	<td>Rioja</td>
+					  	<td>Tempranilla</td>
+					  </tr>
+					  <tr>
+					  	<td>Beaujolais</td>
+					  	<td>Gamay</td>
+					  </tr>
+					</table>
+					<h2>Wit</h2>
+			        <table class="table table-striped">
+					  <th>Streek</th>
+					  <th>Druif</th>
+					  <tr>
+					  	<td>Bordeax</td>
+					  	<td>Sauvignon, Semillion</td>					  	
+					  </tr>
+					  <tr>
+					  	<td>Loire</td>
+					  	<td>Sauvignon</td>
+					  </tr>
+					  <tr>
+					  	<td>Bourgogne</td>
+					  	<td>Chardonnay</td>
+					  </tr>
+					  <tr>
+					  	<td>Rhone</td>
+					  	<td>Viognier</td>
+					  </tr>
+					  <tr>
+					  	<td>Champagne</td>
+					  	<td>Chardonnay, Pinot Noir</td>
 					  </tr>
 					</table>
 			      </div>
@@ -108,29 +164,94 @@
 			    </div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
 			</div><!-- /.modal -->
-<!--
-      <hr>
-
-      <footer class="pull-right">
-        <p>&copy; 't Wijnblad 2013, created by : <a href="http://vandms.nl">van dms</a></p>
-      </footer>
-    <!-- </div> --> <!-- /container -->        
-   <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script> --> 
+			
+			<div class="modal fade" id="info" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+			        <h2 class="modal-title" id="ModalLabel1">Zelf muziek uitzoeken ?</h2>
+			      </div>
+			      <div class="modal-body">
+			        <p>Als u zelf muziek wilt uitzoeken bij uw wijn, dan kunt u de tabel hieronder volgen om de optimale muziek bij uw wijn te vinden</p>
+			        <table class="table table-striped">
+					  <h2>Rood</h2>
+					  <th>Druif</th>
+					  <th>Bijpassende muziek stylen</th>
+					  <tr>
+					  	<td>Cabernet Sauvignon</td>
+					  	<td>Rustige muziek, easy sound</td>
+					  </tr>
+					  <tr>
+					  	<td>Merlot</td>
+					  	<td>Hippe muziek</td>
+					  </tr>
+					  <tr>
+					  	<td>Pinot Noir</td>
+					  	<td>Liefelijk, fluweel</td>
+					  </tr>
+					  <tr>
+					  	<td>Syrah</td>
+					  	<td>Stoere muziek</td>
+					  </tr>
+					  <tr>
+					  	<td>Carmenere</td>
+					  	<td>Eigenwijs en Trendy</td>
+					  </tr>
+					  <tr>
+					  	<td>Gamay</td>
+					  	<td>Jong, jeugdig</td>
+					  </tr>
+					  <tr>
+					  	<td>Tempranilla</td>
+					  	<td>Vurig</td>
+					  </tr>
+					</table>
+					
+					<h2>Wit</h2>
+					<table class="table table-striped">
+					  <th>Druif</th>
+					  <th>Bijpassende muziek stylen</th>
+					  <tr>
+					  	<td>Chardonnay</td>
+					  	<td>Frisse muziek</td>
+					  </tr>
+					  <tr>
+					  	<td>Sauvignon</td>
+					  	<td>Fruitige muziek</td>
+					  </tr>
+					  <tr>
+					  	<td>Viognier</td>
+					  	<td>Stoer, gaaf, een beetje hard</td>
+					  </tr>
+					  <tr>
+					  	<td>Semillion</td>
+					  	<td>Jong, Trendy</td>
+					  </tr>
+					</table>
+					
+			      </div>
+			      <div class="modal-footer">
+			        <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true"><h2>Sluiten</h2></button>
+			      </div>
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div><!-- /.modal -->       
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/share.js"></script>
+        <script src="js/main.min.js"></script>
         <script src="js/jquery.backstretch.js"></script>
-<!--
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e94e1c65e897e0"></script>
+
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-47630298-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
-        </script>
--->     
+        </script>   
     </body>
 </html>

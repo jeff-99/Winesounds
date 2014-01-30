@@ -3,14 +3,15 @@
 
 # TEAM
 
-    Jeffrey Slort -- Developer -- @vandms
-    Michael van Dijk -- Developer -- @vandms
+    Jeffrey Slort -- Developer/Designer -- @vandms
+	Michael van Dijk -- Designer -- @vandms
 
 # THANKS
 
-    Carrot - Share-button - http://carrot.github.io/share-button/
+   
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    addThis
