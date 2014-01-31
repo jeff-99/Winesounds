@@ -14,6 +14,10 @@ body{
 	font-family: 'Courgette', cursive;
 }
 
+h2.nice{
+	color: #5F021F;	
+	text-align: center;
+}	
 .knoppen{
 	margin-top: 30px;
 	margin-right: 15px;
@@ -47,23 +51,7 @@ body{
 /* ==========================================================================
    Button styles
    ========================================================================== */
-.active {
-  margin-bottom: 0;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 32px;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-          user-select: none;
-}
+
 
 .btn-group > .btn {
 	opacity:0.5;
@@ -159,6 +147,24 @@ body{
 }
 
 
+.active {
+  padding: 5px;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
 /* ==========================================================================
    Video styles
    ========================================================================== */
