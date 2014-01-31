@@ -78,25 +78,6 @@ body{
 	transition: opacity 500ms ease;
 }
 
-.btn {
-  display: block;
-  padding: 20px 0;
-  margin-bottom: 5px;
-  font-size: 24px;
-  font-weight: normal;
-  line-height: 32px;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-       -o-user-select: none;
-          user-select: none;
-}
 
 .btn:focus {
   outline: thin dotted #333;
@@ -110,6 +91,9 @@ body{
   text-decoration: none;
 }
 
+.btn-default:hover{
+	color: #000000;
+}
 
 .btn:active,
 .btn.active {
@@ -120,6 +104,14 @@ body{
 }
 
 .btn-oldstyle {
+	/* bootstrap .btn overide */ 
+  display: block;
+  padding: 20px 0;
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 32px;
+  /* end */
   background-color: #5F021F;
   border-color: #5F021F;
   color: #fff;
