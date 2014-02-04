@@ -1,10 +1,5 @@
 <?php 
-
-/* Definities */
-define('HOST', 'db7.hosting2go.nl');
-define('USER', 'm1_fcb1927d');
-define('PASS', 'JnR8YbZdcr');
-define('DB', 'm1_fcb1927d');
+require 'config.php';
 
 $parent_id_get = $_GET['parent_id'];
 $parent_id = preg_replace("/\D/", "", $parent_id_get);
